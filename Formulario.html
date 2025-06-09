@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!--Aca hago un container para poder hacer la figura editada que va a contener estos datos-->
+    <div class="background">
+        
+        <div class="form-content">
+            <h1 class="title">Give me your information</h1>
+            
+            
+            <form action="#">
+                
+                <div id="input-group"></div>
+                
+                <!--Definimos los nombre de los input y las caracteristicas que queremos tener-->
+                <div class="input-field">
+                    <label for="name">Name:</label>
+                    <!--Usamos el input para que la personas ingresen sus datos personales y nos lo envien-->                
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="input-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="input-field">
+                    <label for="password"> Password:</label>
+                    <input type=password id="password" name="password" required>
+                </div>
+                
+                <div class="sign-up">
+                    <button type="submit">sign up</button>
+                </div>
+                
+                
+                <!--Se utiliza el form para crear un formulario -->
+            </form>
+        </div>        
+    </div>
+</body>
+</html>
+

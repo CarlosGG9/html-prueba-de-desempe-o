@@ -1,0 +1,87 @@
+/*Inserto las funciones para que aparezcan centrados los datos*/
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+/*Aca edito el fondo de la pagina para que se adapte a todo tipo de pantallas usando el vh, aparte de eso se le agrega un fondo de pantalla sacado de la web para que sea mas estetico*/
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(un-caleidoscopio-de-movimiento-y-vitalidad-effbta008590g8jg.webp);
+    display: flex;
+}
+/*Edito la figura u container que tiene dentro todos los datos a pedir agregandole un difuminado con el flur*/
+/*Tambien se le edita las esquinas para que quede mas estetico y se modifica la altura deseada, la anchura y la sombra de la figura*/
+.form-content{
+    backdrop-filter: blur(20);
+    overflow: hidden;
+    box-shadow: -10px 0 10px -5px rgba(0,0,0,0.3),
+            10px 0 10px -5px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 450px;
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+}
+/*Este style lo que modifica el el tamaño de la letra del titulo, su posicion y su color*/
+.form-content h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+/*Se le da forma a los inputs puestos en el html editando su margen,la curvatura de su bordes, el donde esta ubicado con el display, tambien agregandole una sombra para darle estetica*/
+.input-field{
+    box-shadow: -10px 0 10px -5px rgba(0,0,0,0.3),
+            10px 0 10px -5px rgba(0,0,0,0.3);
+    background-color: rgb(243, 243, 243);
+    margin: 15px 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+/*Aca se edita la parte interna de los input modificando su color de letra, su fondo haciendolo transparente y centrandolo*/
+input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: rgb(0, 0, 0);
+}
+/*Aca edito lo que viene a ser el boton de sign up para dejarlo centrado*/
+.send{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*Aqui continuo con la edicion de del boton de sign up dandole sombra, editando su tamaño de letra, su altura, su ancho, sus bordes y su fondo */
+.sign-up button{
+    box-shadow: -10px 0 10px -5px rgba(0,0,0,0.3),
+    10px 0 10px -5px rgba(0,0,0,0.3);
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    height: 40px;
+    border-radius: 25px;
+    border: 3px;
+    outline: 0;
+    cursor: pointer;
+    width: 250px;
+    transition: 600ms;
+}
+
+button:hover{
+    transform: scale(1.1);
+
+}
+
+/*Y aca solo le doy la altura a todos los inputs para que queden parejos*/
+.input-group{
+    height: 250px;
+}
